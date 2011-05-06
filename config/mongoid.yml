@@ -10,11 +10,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: mongoid_test_development
+  database: whichado_development
 
 test:
   <<: *defaults
-  database: mongoid_test_test
+  database: whichado_test
 
 # set these environment variables on your prod server
 production:
