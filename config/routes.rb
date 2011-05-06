@@ -1,4 +1,4 @@
-MongoidTest::Application.routes.draw do
+Whichado::Application.routes.draw do
   get "vip/index"
 
   get "home/index"

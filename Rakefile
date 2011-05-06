@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-MongoidTest::Application.load_tasks
+Whichado::Application.load_tasks
