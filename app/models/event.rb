@@ -1,7 +1,7 @@
 class Event
   include Mongoid::Document
   field :name, type: String
-  field :description, type: Text
+  field :description, type: String
   field :date, type: Date # fk
   field :time, type: Time
   field :sponsor, type: String
