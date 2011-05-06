@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Whichado</title>
+  <title>Whichado - <%= yield(:title) || "Home" %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "jquery.min.js" %>
+	<%= javascript_include_tag "jquery.rails.js" %>
+	<%= javascript_include_tag "application.js" %>	
   <%= csrf_meta_tag %>
+  <%= yield(:head) %>
 </head>
+
 <body>
+	<div id="page">
+    <div id="top_bar">
+			<div id="top_bar_container">
+				<div id="top_bar_logo">
+					<%= link_to "Whichado", root_path, :class => "logo" %>
+				</div> <!-- top_bar_logo -->
+				<div id="top_bar_search" style="" class="link_button">
+					<div id="top_bar_search_form" style="display:all">
+					<% form_tag '/home/search', :method => 'get' do %>
+					    <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+					    <%= submit_tag "Search", :id => "search_button", :name => nil %>
+					<% end %>
+					</div> <!-- top_bar_search_form -->
+				</div> <!-- top_bar_search -->
+				<div id="top_bar_links">
+					<% if user_signed_in? %>
+						<%= link_to current_user.name, edit_user_registration_path %> | 
+					<% end %>
+					<%= link_to 'Home', root_path %> | 
+					<% if user_signed_in? %>
+					    <%= link_to "Sign out", destroy_user_session_path %>
+					<% else %>
+					    <%= link_to "Sign in", new_user_session_path %>
+					<% end %>
+		    </div> <!-- top_bar_links -->
+			</div> <!-- top_bar_container -->
+    	<div style="clear:both"> <br/> </div>
+    </div> <!-- top_bar -->
 
-<%= yield %>
+    <div id="site">
+			<div id="banner">
+				<div id="banner_top">
+					No matter what you do, Whichado
+				</div> <!-- banner_top -->
+				<div id="banner_bottom">
+					Make your day more notable. 
+	    	</div> <!-- banner_bottom -->
+			</div> <!-- banner -->
+			<div id="notices">
+				<div id="notices_info"> </div> <!-- notices_info -->
+				<div class="notice"><%= notice %></div>
+      	<div class="alert"><%= alert %></div>
+			</div> <!-- notices -->
+			<div id="noscript">
+				<noscript>Yeah, about that... I'm gonna need you to enable JavaScript. Thanks!</noscript>
+			</div> <!-- noscript -->
 
+      <div id="content">
+        <%= yield %>
+      </div> <!-- content -->
+    	<div style="clear:both"><br/></div>
+  	</div> <!-- site -->
+		<div class="push"></div>
+  </div> <!-- page -->
+
+	<div id="footer">
+		&copy; <%= link_to "Whichado", root_path %> | 
+		<%= link_to "Feedback", 'http://www.google.com/moderator/#16/e=49eb1' %>
+	</div> <!-- footer -->
 </body>
 </html>
