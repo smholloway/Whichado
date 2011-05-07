@@ -1,6 +1,6 @@
-class Day
+class City
   include Mongoid::Document
   field :name, type: String
-  
-  embeds_many :days
+  has_many :days
+  index :name, unique: true
 end

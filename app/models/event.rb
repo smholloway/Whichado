@@ -12,7 +12,7 @@ class Event
   field :link_to_buy, type: String
   field :link_to_venue, type: String
   field :vetted, type: Boolean, default: false
-  
   embeds_many :categories
-  embedded_in :day
+  belongs_to :day
+  index "categories.name"
 end

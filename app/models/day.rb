@@ -1,7 +1,14 @@
 class Day
   include Mongoid::Document
+  field :city, type: String
   field :date, type: Date
-  
-  embeds_many :events
-  embedded_in :city
+  has_many :events
+  belongs_to :city
+  index(
+      [
+        [ :city, Mongo::ASCENDING ],
+        [ :date, Mongo::DESCENDING ]
+      ],
+      unique: true
+    )
 end
