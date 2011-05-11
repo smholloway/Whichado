@@ -7,14 +7,17 @@ Whichado::Application.routes.draw do
   scope "/Austin" do
     resources :events
   end
+  match '/Austin', :to => 'home#index' # TODO: change to landing
   
   scope "/NewYork" do
     resources :events
   end
+  match '/NewYork', :to => 'home#index' # TODO: change to landing
   
   scope "/Seattle" do
     resources :events
   end
+  match '/Seattle', :to => 'home#index' # TODO: change to landing
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
