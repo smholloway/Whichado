@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Whichado - Austin</title>
-
-	<style type="text/css">
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Whichado - <%= @city %></title> 
+ 
+	<style type="text/css"> 
 	    
 	    body
 	    {
@@ -91,20 +91,22 @@
 	        width: 500px;
 	    }
 	    
-	</style>
-</head>
-
-<body>
-	<div id="page-wrap">
-	    <div id="content" class="transparent shadow rounded">
-            <h1>Whichado - Austin</h1>
-            Just a blurb about the site here... and Login/Signup!
-        </div>
-        <div id="footer">About Us | ...</div>
-	</div>
-    <!-- main bg image -->
-	<div id="bg">
-		<img src="images/bg_austin.jpg" alt="" />
-	</div>
-</body>
+	</style> 
+</head> 
+ 
+<body> 
+	<div id="page-wrap"> 
+	    <div id="content" class="transparent shadow rounded"> 
+            <h1>Whichado - <%= @city %></h1> 
+            
+            <%= yield %>
+            
+        </div> 
+        <div id="footer">About Us | ...</div> 
+	</div> 
+    <!-- main bg image --> 
+	<div id="bg"> 
+		<img src="images/bg_<%= @cityOriginal.downcase.delete(' ') %>.jpg" alt="" /> 
+	</div> 
+</body> 
 </html>
