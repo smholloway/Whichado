@@ -22,7 +22,19 @@ Whichado::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
-  
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-end
 
+  # Devise configuration from wiki
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => 'admin@whichado.com',
+    :password             => 'Averystrongpassword!',
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+end
