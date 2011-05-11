@@ -19,3 +19,15 @@ http://www.nycinsiderguide.com/New-York-City-Events.html#axzz1LUEsYANN
 http://losangeles.citysearch.com/
 http://eventful.com/
 http://www.mycityguide.net/
+
+Setup
+=====
+Use Ruby 1.9.2
+- rvm install 1.9.2
+- rvm 1.9.2
+Install mongodb
+- sudo port install mongodb
+Install mongo
+- sudo gem install mongo
+Grab the project gems
+- bundle install

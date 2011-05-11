@@ -1,10 +1,10 @@
 html, body {
-  font-family: Helvetica, 'Lucinda Grande', Arial, sans-serif;
+	font-family: Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
 	font-size: 14px;
 	line-height: 130%;
-  background: #FFFFFF;
-  color: #000000;
-  height: 100%;
+	background: #FFFFFF;
+	color: #000000;
+	height: 100%;
 	min-width: 800px;
 }
 
@@ -529,34 +529,73 @@ textarea.styled_text_area_3_400 {
 .clear {
   clear: both;
 }
-#fb_goals {
-  width: 244px;
+
+#bg {
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
 }
-#fb_goals_list_header {
-  background: #F2F2F2;
-  color: #000;
-  border-top: 1px solid #E2E2E2;
-  height: 13px;
-  line-height: 13px;
-  font-size: 11px;
-  font-family: 'lucinda-grande', verdana, tahoma, sans-serif;
-  padding: 4px 5px 5px;
+#bg img {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto; 
+	min-width: 50%;
+	min-height: 50%;
 }
-#fb_goals_list {
-  background: #FFF;
-  color: #3B5998;
-  font-size: 11px;
-  font-family: 'lucinda-grande', verdana, tahoma, sans-serif;
-  padding-left: 5px;
-  padding-right: 5px;
+
+#page-wrap {
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    padding: 0;
+    margin: 100px auto;
 }
-.fb_goal {
-  margin-bottom: 4px;
+
+.transparent {
+    width: 100%; 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
 }
-.fb_tasks_list {
-  padding-left: 12px;
-  display: none;
+
+.shadow {
+    -moz-box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+    box-shadow: 5px 5px 10px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#000000');
 }
-.fb_plus_minus {
-  float: left;
+
+.rounded {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#landing-content {
+    background: #000;
+    z-index: 3;
+    margin: 0;
+    padding: 15px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
+}
+
+#landing-footer {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.8em;
+    width: 500px;
 }

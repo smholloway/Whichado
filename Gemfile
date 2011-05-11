@@ -8,7 +8,6 @@ gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
