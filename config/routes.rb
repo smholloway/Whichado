@@ -1,7 +1,20 @@
 Whichado::Application.routes.draw do
+
   get "vip/index"
 
   get "home/index"
+
+  scope "/Austin" do
+    resources :events
+  end
+  
+  scope "/NewYork" do
+    resources :events
+  end
+  
+  scope "/Seattle" do
+    resources :events
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
