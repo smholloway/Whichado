@@ -1,0 +1,20 @@
+<div id="header">
+	<div id="top_bar_container">
+		<div id="top_bar_logo">
+			<%= link_to "Whichado", root_path, :class => "logo" %>
+		</div> <!-- top_bar_logo -->
+
+		<div id="top_bar_links">
+			<% if user_signed_in? %>
+				<%= link_to current_user.email, edit_user_registration_path %> | 
+			<% end %>
+			<%= link_to 'Home', root_path %> | 
+			<% if user_signed_in? %>
+			    <%= link_to "Sign out", destroy_user_session_path %>
+			<% else %>
+			    <%= link_to "Sign in", new_user_session_path %>
+			<% end %>
+    </div> <!-- top_bar_links -->
+	</div> <!-- top_bar_container -->
+	<div style="clear:both"> <br/> </div>
+</div> <!-- header -->

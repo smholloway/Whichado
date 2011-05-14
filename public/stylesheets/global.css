@@ -3,8 +3,8 @@ html, body {
   font-size: 14px;
   font-size: 1.1em;
   line-height: 130%;
-  background: #FFFFFF;
-  color: #000000;
+  background: #EFEFEF;
+  color: #333;
   min-width: 800px;
 }
 
@@ -13,19 +13,13 @@ a {
   color: #FFF;
 }
 
-#page {
-  margin: 0 auto -32px;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-
 #content {
-  width: 880px;
+  width: 960px;
+  margin: auto;
   padding: 10px;
 }
 
-#top_bar {
+#header {
   position: relative;
   top: auto;
   left: auto;
@@ -40,7 +34,7 @@ a {
   color: #286DA3;
 }
 #top_bar_container {
-  width: 900px;
+  width: 960px;
   margin: 0px auto;
 }
 #top_bar_logo {
@@ -89,18 +83,12 @@ a {
 #top_bar_links a:hover {
   text-decoration: underline;
 }
-#top_bar_search {
-  margin-left: 10px;
-  height: 50px;
-  line-height: 50px;
-}
 
 #site {
-  margin: -20px auto 10px;
+  margin: 10px auto 10px;
   position: relative;
   padding: 0px 5px;
-  min-width: 870px;
-  width: 900px;
+  width: 960px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -109,7 +97,7 @@ a {
 }
 
 #notices {
-  width: 896px;
+  width: 100%;
   padding: 2px;
   margin: 5px auto 2px;
   text-align: center;
@@ -122,7 +110,7 @@ a {
   color: red;
 }
 
-#footer {
+#old-footer {
   position: relative;
   bottom: -1px;
   left: auto;
@@ -135,8 +123,16 @@ a {
   padding: 0px 5px;
   text-align: center;
 }
+#footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 0.8em;
+}
 #footer a {
-  color: #286DA3;
+  color: #fff;
   text-decoration: none;
 }
 #footer a:hover {
@@ -171,128 +167,11 @@ a {
   -box-shadow: #333 0px 0px 5px;
 }
 
-a.link {
-  text-decoration: none;
-  color: #FFFFFF; 
-  outline: none;
-  color: #286DA3; 
-}
-a.link:hover {
-  text-decoration: underline;
-}
-
-a.clickable_button {
-  margin: auto;
-  min-width: 100px;
-  font-size: 12px;
-  text-decoration: none;
-  background: #EE4720;
-  color: #FFFFFF;
-  padding: 10px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -box-shadow: #333 0px 0px 5px;
-  -moz-box-shadow: #333 0px 0px 5px;
-  -webkit-box-shadow: #333 0px 0px 5px;
-}
-a.clickable_button:hover {
-  background: #FF5831;
-  background: -moz-linear-gradient(top, #EE4720, #FF5831);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF5831), to(#EE4720));
-}
-
-._odd {
-  min-height: 30px;
-  background: #E8E8E8;
-  padding: 10px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  margin-bottom: 1px;
-}
-._even {
-  min-height: 30px;   
-  padding: 10px;
-  border: 1px solid #E8E8E8;  
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;   
-}
-
-.plus_minus {
-  font-family: Courier New, monospace;
-  width: 12px;
-  margin-left: 18px;
-  display: inline;
-  text-align: center;
-  padding: 1px 1px 0px 2px;
-  height: 16px;
-  line-height: 16px;
-  font-size: 12px;
-  background: #FFFFFF;
-  cursor: pointer;
-  border: 1px solid gold;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; 
-}
-
-textarea.styled_text_area_1_20 {
-  width: 20px;
-  height: 16px;
-}
-textarea.styled_text_area_1_400 {
-  width: 400px;
-  height: 16px;
-}
-textarea.styled_text_area_3_400 {
-  width: 400px;
-  height: 48px;
-}
 
 #noscript {
   color: red;
   font-size: 130%;
   text-align: center;
-}
-.push {
-  height: 30px;
-}
-.italic {
-  font-style:italic;
-}
-.bold {
-  font-weight: bold;
-}
-.hidden {
-  visibility: hidden;
-}
-.hover {
-  z-index: 999;
-  width: 220px;
-  position: absolute;
-  background: #286DA3;
-  color: #FFFFFF;
-  padding: 5px;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  top: -50px;
-  left: auto;
-  text-align: center;
-}
-.left {
-  float: left;
-  margin-right: 1px;
-}
-.right {
-  float: right;
-  margin-left: 1px;
-}
-.clear {
-  clear: both;
 }
 
 #bg {
@@ -316,7 +195,7 @@ textarea.styled_text_area_3_400 {
 #page-wrap {
   position: relative;
   z-index: 2;
-  width: 500px;
+  width: 800px;
   padding: 0;
   margin: 100px auto;
 }
@@ -361,10 +240,3 @@ h1 {
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
 
-#landing-footer {
-  text-align: center;
-  color: #fff;
-  margin-top: 30px;
-  font-size: 0.8em;
-  width: 500px;
-}
