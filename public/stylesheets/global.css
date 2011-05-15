@@ -5,8 +5,7 @@ html, body {
   /* line-height: 130%; */
   background: #333;
   color: #FFF;
-  /* min-width: 700px; */
-  overflow: hidden;
+  min-width: 800px;
 }
 
 a {
