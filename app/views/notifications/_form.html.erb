@@ -1,4 +1,4 @@
-<%= form_for(notification) do |f| %>
+<%= form_for(notification, :html => { :class => "uniForm"} ) do |f| %>
   <% if notification.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(notification.errors.count, "error") %> prohibited this notification from being saved:</h2>
@@ -12,15 +12,21 @@
   <% end %>
 
   <%= hidden_field_tag(:url, url) %>
-  <table>
-    <tr>
-      <td><%= f.label :city %></td><td><%= f.text_field :city %></td>
-    </tr>
-    <tr>
-      <td><%= f.label :email %></td><td><%= f.text_field :email %></td>
-    </tr>
-    <tr>
-      <td colspan=2><%= f.submit 'Let me know' %></td>
-    </tr>
-  </table>
+  
+  <fieldset class="inlineLabels">
+    <div class="ctrlHolder">
+      <%= f.label :city %>
+      <%= f.text_field :city, :class => "textInput" %>
+    </div>
+    
+    <div class="ctrlHolder">
+      <%= f.label :email %>
+      <%= f.text_field :email, :class => "textInput" %>
+    </div>
+    
+    <div class="buttonHolder">
+      <%= f.submit 'Let me know', :class => "primaryAction" %>
+    </div>
+  </fieldset>
 <% end %>
+<br>

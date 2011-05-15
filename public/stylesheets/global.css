@@ -1,11 +1,12 @@
 html, body {
-  font-family: Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
-  font-size: 14px;
-  font-size: 1.1em;
-  line-height: 130%;
+  /* font-family: Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif; */
+  /* font-size: 14px; */
+  /* font-size: 1.1em; */
+  /* line-height: 130%; */
   background: #333;
   color: #FFF;
-  min-width: 800px;
+  /* min-width: 700px; */
+  overflow: hidden;
 }
 
 a {
@@ -13,9 +14,11 @@ a {
   color: #FFF;
 }
 
+/*
 td {
   padding: 5px;
 }
+*/
 
 #content {
   width: 960px;
@@ -31,8 +34,8 @@ td {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
   display: block;
   height: 70px;
-  line-height: 50px;
-  font-size: 12sepx;
+  /* line-height: 50px; */
+  /* font-size: 12sepx; */
   border-bottom: 1px groove #FFF;
   padding: 0px 5px;
   color: #286DA3;
@@ -97,9 +100,10 @@ td {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   display: block;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
+/*
 #notices {
   width: 100%;
   padding: 2px;
@@ -113,11 +117,18 @@ td {
 .alert {
   color: red;
 }
+*/
 
 #flash { 
   display: none;
-  color: #fff;
   text-align: center;
+  border: 2px solid #ddd;
+  background: #fff6bf;
+  color: #514721;
+  border-color: #ffd324;
+  font-size: 1.2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #old-footer {
@@ -127,19 +138,22 @@ td {
   display: block;
   height: 30px;
   line-height: 30px;
-  font-size: 13px;
+  /* font-size: 13px; */
   border-top: 1px groove #FFF;
   background: #E8E8E8;
   padding: 0px 5px;
   text-align: center;
 }
+
 #footer {
-  width: 100%;
+  width: 600px;
   margin: auto;
   text-align: center;
   color: #fff;
   margin-top: 30px;
-  font-size: 0.8em;
+  background: #000;
+  padding: 5px;
+  /* font-size: 0.8em; */
 }
 #footer a {
   color: #fff;
@@ -211,7 +225,6 @@ td {
 }
 
 .transparent {
-  width: 100%; 
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: alpha(opacity=90);
   -moz-opacity:0.9;
@@ -240,13 +253,14 @@ td {
   margin: 0;
   padding: 15px;
   color: #fff;
+  padding-left: 35px;
 }
 #landing-content h1 {
   margin: 5px;
 }
-
+/*
 h1 {
   font-size: 2em;
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
-
+*/
