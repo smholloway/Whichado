@@ -3,8 +3,8 @@ html, body {
   font-size: 14px;
   font-size: 1.1em;
   line-height: 130%;
-  background: #EFEFEF;
-  color: #333;
+  background: #333;
+  color: #FFF;
   min-width: 800px;
 }
 
@@ -23,8 +23,8 @@ a {
   position: relative;
   top: auto;
   left: auto;
-  background: -moz-linear-gradient(top, #E8E8E8, #FFFFFF);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#E8E8E8));
+  background: -moz-linear-gradient(top, #000, #333);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
   display: block;
   height: 70px;
   line-height: 50px;
@@ -53,7 +53,7 @@ a {
 #top_bar_logo a {
   text-decoration: none;
   outline: none;
-  color: #333;
+  color: #fff;
 }
 #top_bar_logo a:hover {
   color: #286DA3;
@@ -68,8 +68,8 @@ a {
   line-height: 30px;
   min-width: 30px;
   text-align: center;
-  background: #EEE -moz-linear-gradient(top, #FFF, #EEE);
-  background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+  background: #EEE -moz-linear-gradient(top, #000, #333);
+  background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
   text-shadow: rgba(255, 255, 255, 0.246094) -1px -1px 0px;
   border: 1px solid #EEE;
   -webkit-border-radius: 2px;
