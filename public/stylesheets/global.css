@@ -102,22 +102,6 @@ td {
   /* font-size: 14px; */
 }
 
-/*
-#notices {
-  width: 100%;
-  padding: 2px;
-  margin: 5px auto 2px;
-  text-align: center;
-  color: green;
-}
-.notice {
-  color: green;
-}
-.alert {
-  color: red;
-}
-*/
-
 #flash { 
   display: none;
   text-align: center;
@@ -130,29 +114,13 @@ td {
   padding-bottom: 5px;
 }
 
-#old-footer {
-  position: relative;
-  bottom: -1px;
-  left: auto;
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  /* font-size: 13px; */
-  border-top: 1px groove #FFF;
-  background: #E8E8E8;
-  padding: 0px 5px;
-  text-align: center;
-}
-
 #footer {
-  width: 600px;
+  width: 100%;
   margin: auto;
   text-align: center;
   color: #fff;
   margin-top: 30px;
-  background: #000;
   padding: 5px;
-  /* font-size: 0.8em; */
 }
 #footer a {
   color: #fff;
