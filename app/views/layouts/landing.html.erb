@@ -8,15 +8,25 @@
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
 </head> 
-
-<body> 
+<body>
     <div id="page-wrap"> 
         <div id="landing-content" class="transparent shadow rounded"> 
             <h1>Whichado - <%= @city %></h1> 
-
+            
             <%= yield %>
-
-        </div> 
+            
+            <% if flash[:notice] %>
+              <script>
+                $(function() {
+                   $('#flash').delay(500).fadeIn('normal', function() {
+                      $(this).delay(2500).fadeOut();
+                   });
+                });
+              </script>
+              <div id="flash"><%= flash[:notice] %></div>
+            <% end %>
+        </div>
+        
 		<%= render 'shared/footer' %>
     </div> 
     <!-- main bg image --> 

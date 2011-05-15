@@ -3,7 +3,9 @@ Whichado::Application.routes.draw do
   get "vip/index"
 
   get "home/index"
-
+  
+  resources :notifications
+  
   scope "/Austin" do
     resources :events
   end
