@@ -46,7 +46,7 @@
                             -o-border-radius:      4px;
                             -khtml-border-radius:  4px;
                           }
-      .uniForm .buttonHolder .primaryAction{ padding: 10px 22px; line-height: 1; background: #254a86; border: 1px solid #163362; font-size: 12px; font-weight: bold; color: #fff; cursor: pointer;
+    .uniForm .buttonHolder .primaryAction{ margin-top: 6px; padding: 12px 22px; line-height: 1; background: #254a86; border: 1px solid #163362; font-size: 12px; font-weight: bold; color: #fff; cursor: pointer;
                                              /* CSS3 */
                                              border-radius:         4px;
                                              -webkit-border-radius: 4px;
