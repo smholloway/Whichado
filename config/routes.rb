@@ -15,6 +15,8 @@ Whichado::Application.routes.draw do
   match '/Seattle', :to => 'home#coming'
   match '/Houston', :to => 'home#coming'
   match '/Dallas', :to => 'home#coming'
+  match '/SanFrancisco', :to => 'home#coming'
+  match '/LosAngeles', :to => 'home#coming'   
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
