@@ -1,0 +1,23 @@
+<%= form_for("user", :html => { :class => "uniForm"}, :url => new_user_session_path ) do |f| %>  
+  <fieldset class="inlineLabels">
+    <div class="ctrlHolder">
+      <%= f.label :email %>
+      <%= f.text_field :email, :class => "textInput" %>
+    </div>
+    
+    <div class="ctrlHolder">
+      <%= f.label :password %>
+      <%= f.password_field :password, :class => "textInput" , :class => "textInput" %>
+    </div>
+    
+    <div class="ctrlHolder">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, :class => "textInput" %>
+    </div>
+        
+    <div class="buttonHolder">
+      <%= f.submit 'Sign up', :class => "primaryAction" %>
+    </div>
+  </fieldset>
+<% end %>
+<br>

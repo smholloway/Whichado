@@ -13,20 +13,30 @@
 	  <%= render 'shared/header' %>
 
     <div id="site">
-			<div id="notices">
-				<div id="notices_info"> </div> <!-- notices_info -->
-				<div class="notice"><%= notice %></div>
-      	<div class="alert"><%= alert %></div>
-			</div> <!-- notices -->
+      
+      <% if flash[:notice] %>
+        <script>
+          $(function() {
+             $('#flash').delay(500).fadeIn('normal', function() {
+                $(this).delay(2500).fadeOut();
+             });
+          });
+        </script>
+        <div id="flash"><%= flash[:notice] %></div>
+      <% end %>
+      
 			<div id="noscript">
 				<noscript>Yeah, about that... I'm gonna need you to enable JavaScript. Thanks!</noscript>
 			</div> <!-- noscript -->
 
+      <%= render 'shared/login' %>
+
       <div id="content">
         <%= yield %>
       </div> <!-- content -->
+      
+      <%= render 'shared/footer' %>
   	</div> <!-- site -->
 
-  <%= render 'shared/footer' %>
 </body>
 </html>
