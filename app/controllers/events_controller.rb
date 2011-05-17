@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   def index
-    # gets city name from URI and adds space for camel cased cities
-    @city = unCamel(request.request_uri.split("/")[1])
+    @cityOriginal = request.request_uri.split("/")[1]
+    @city = @cityOriginal.titlecase
   end
   
   def show

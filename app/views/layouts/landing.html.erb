@@ -7,6 +7,7 @@
     <%= javascript_include_tag "application.js" %>  
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
+    <%= render 'shared/analytics' %>
 </head> 
 <body>
     <div id="page-wrap"> 
@@ -32,7 +33,7 @@
     </div> 
     <!-- main bg image --> 
     <div id="bg"> 
-        <img src="images/bg_<%= @cityOriginal.downcase.delete(' ') %>.jpg" alt="" /> 
+        <img src="images/bg_<%= @cityOriginal.downcase %>.jpg" alt="" /> 
     </div> 
 </body> 
 </html>
