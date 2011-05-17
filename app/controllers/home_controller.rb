@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   def live
     # gets city name from URI and adds space for camel cased cities
     @cityOriginal = request.request_uri.split("/")[1]
-    @city = unCamel(@cityOriginal)
+    @city = @cityOriginal.titlecase
     
     render :layout => "landing"
   end
@@ -18,7 +18,7 @@ class HomeController < ApplicationController
   def coming
     # gets city name from URI and adds space for camel cased cities
     @cityOriginal = request.request_uri.split("/")[1]
-    @city = unCamel(@cityOriginal)
+    @city = @cityOriginal.titlecase
     
     render :layout => "landing"
   end
