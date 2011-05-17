@@ -1,3 +1,5 @@
+<h2>Sign up</h2>
+
 <%= form_for("user", :html => { :class => "uniForm"}, :url => user_session_path ) do |f| %>  
   <fieldset class="inlineLabels">
     <div class="ctrlHolder">
@@ -11,7 +13,7 @@
     </div>
 
     <div class="buttonHolder">
-      <label class="secondaryAction" for="user_remember_me"><input type="checkbox" id="tos" name="tos"> Remember me</label>
+      <label class="secondaryAction" for="user_remember_me"><input type="checkbox" id="user_remember_me" name="user_remember_me"> Remember me</label>
       <%= f.submit 'Sign in', :class => "primaryAction" %>
     </div>
   </fieldset>

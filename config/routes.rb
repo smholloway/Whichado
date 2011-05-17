@@ -9,16 +9,19 @@ Whichado::Application.routes.draw do
   scope "/Austin" do
     resources :events
   end
-  match '/Austin', :to => 'home#live'
+  match 'Austin', :to => 'home#live', :as => :austin
   
-  match '/NewYork', :to => 'home#coming'
-  match '/Seattle', :to => 'home#coming'
-  match '/Houston', :to => 'home#coming'
-  match '/Dallas', :to => 'home#coming'
-  match '/SanFrancisco', :to => 'home#coming'
-  match '/LosAngeles', :to => 'home#coming'   
+  match 'NewYork', :to => 'home#coming', :as => :newyork  
+  match 'Seattle', :to => 'home#coming', :as => :seattle
+  match 'Houston', :to => 'home#coming', :as => :houston
+  match 'Dallas', :to => 'home#coming', :as => :dallas
+  match 'SanFrancisco', :to => 'home#coming', :as => :sanfrancisco
+  match 'LosAngeles', :to => 'home#coming', :as => :losangeles
+  match 'YourCity', :to => 'home#coming', :as => :yourcity
 
   root :to => "home#redirect"
+  match 'about' => 'home#about', :as => :about
+  match 'login' => 'home#login', :as => :login  
   
   devise_for :users
 

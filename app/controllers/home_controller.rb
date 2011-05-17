@@ -1,5 +1,10 @@
 class HomeController < ApplicationController
   def index
+    if user_signed_in?
+      @city = 'Austin'
+    else
+      return redirect
+    end
   end
   
   def redirect
@@ -21,6 +26,12 @@ class HomeController < ApplicationController
     @city = @cityOriginal.titlecase
     
     render :layout => "landing"
+  end
+  
+  def login
+  end
+  
+  def about
   end
 
 end

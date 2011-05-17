@@ -1,4 +1,6 @@
-<%= form_for("user", :html => { :class => "uniForm"}, :url => new_user_session_path ) do |f| %>  
+<h2>Sign in</h2>
+
+<%= form_for("user", :html => { :class => "uniForm"}, :url => user_registration_path ) do |f| %>  
   <fieldset class="inlineLabels">
     <div class="ctrlHolder">
       <%= f.label :email %>
