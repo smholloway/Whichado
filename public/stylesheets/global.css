@@ -27,8 +27,6 @@ a {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
   display: block;
   height: 70px;
-  /* line-height: 50px; */
-  /* font-size: 12sepx; */
   border-bottom: 1px groove #FFF;
   padding: 0px 5px;
   color: #286DA3;
@@ -41,8 +39,8 @@ a {
   float: left;
   margin-left: 15px;
   min-width: 50px;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 42px;
+  line-height: 70px;
   font-variant: small-caps;
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, 0.246094) -1px -1px 0px;
@@ -51,6 +49,7 @@ a {
   font-family: inherit;
 }
 #top_bar_logo a {
+  font-family: "Lobster", Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   text-decoration: none;
   outline: none;
   color: #fff;
@@ -59,29 +58,38 @@ a {
   color: #286DA3;
   text-shadow: rgba(0, 0, 0, 0.246094) 2px 2px 2px;
 }
-#top_bar_links {
-  padding: 1px;
-  margin-top: 10px;
-  margin-right: 10px;
+
+#topnav {
+  margin: 10px auto;
   float: right;
-  height: 30px;
-  line-height: 30px;
-  min-width: 30px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+}
+#topnav ul {
+  list-style: none;
+}
+#topnav ul li {
+  padding: 5px;
+  float: left;
+  display: inline;
   text-align: center;
-  background: #333 -moz-linear-gradient(top, #000, #333);
-  background: #333 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
-  text-shadow: rgba(255, 255, 255, 0.246094) -1px -1px 0px;
-  border: 1px solid #EEE;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  vertical-align: middle;
 }
-#top_bar_links a {
-  margin: auto 5px;
+#topnav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-#top_bar_links a:hover {
-  text-decoration: underline;
+#topnav ul li a:hover {
+  color: #FFF;
+  text-decoration: none;  
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
 #site {

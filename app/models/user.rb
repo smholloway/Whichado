@@ -5,4 +5,6 @@ class User
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  #Do we want to add usernames?
+  #field :username, type: String
 end
