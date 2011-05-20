@@ -53,9 +53,14 @@ a {
   text-decoration: none;
   outline: none;
   color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;  
 }
 #top_bar_logo a:hover {
-  color: #286DA3;
+  color: #254A86;
   text-shadow: rgba(0, 0, 0, 0.246094) 2px 2px 2px;
 }
 
