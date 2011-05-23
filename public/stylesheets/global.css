@@ -3,9 +3,10 @@ html, body {
   /* font-size: 14px; */
   /* font-size: 1.1em; */
   /* line-height: 130%; */
-  background: #333;
-  color: #fff;
+  /* background: #333; */
+  /* color: #fff; */
   min-width: 800px;
+  background-image:url('../images/texture.png');
 }
 
 a {
@@ -16,35 +17,40 @@ a {
 #content {
   width: 960px;
   margin: auto;
-  padding: 10px;
+  padding: 15px;
+  background: #fff;
+  color: #000;
 }
 
 #header {
   position: relative;
   top: auto;
   left: auto;
-  background: -moz-linear-gradient(top, #000, #333);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333));
+  /* background: -moz-linear-gradient(top, #000, #333);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#333)); */
   display: block;
   height: 70px;
   border-bottom: 1px groove #FFF;
   padding: 0px 5px;
   color: #286DA3;
 }
+
 #top_bar_container {
   width: 960px;
   margin: 0px auto;
 }
+
 #top_bar_logo {
   float: left;
   margin-left: 15px;
   min-width: 50px;
   font-size: 42px;
   line-height: 70px;
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, 0.246094) -1px -1px 0px;
 }
+
 .logo_font {
   font-family: "Lobster", Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   text-decoration: none;
@@ -55,6 +61,7 @@ a {
 .logo {
   font-family: inherit;
 }
+
 #top_bar_logo a {
   font-family: "Lobster", Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   text-decoration: none;
@@ -155,6 +162,7 @@ a {
   min-width: 400px;
   width: 100%;
 }
+
 #login-fancy {
   margin: auto;
   padding: 10px 0px;
@@ -171,7 +179,6 @@ a {
   -box-shadow: #333 0px 0px 5px;
 }
 
-
 #noscript {
   color: red;
   font-size: 130%;
@@ -185,6 +192,7 @@ a {
   width: 200%; 
   height: 200%;
 }
+
 #bg img {
   position: absolute; 
   top: 0; 
@@ -235,6 +243,7 @@ a {
   color: #fff;
   padding-left: 35px;
 }
+
 #landing-content h1 {
   margin: 5px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Whichado - <%= yield(:title) || "Welcome" %></title>
+  <title>Whichado - <%= yield_for(:title, "No matter what you do, Whichado!") %></title>
   <%= stylesheet_link_tag :all %>
 	<%= javascript_include_tag "jquery.min.js" %>
 	<%= javascript_include_tag "application.js" %>	
@@ -31,7 +31,7 @@
 				<noscript>Yeah, about that... I'm gonna need you to enable JavaScript. Thanks!</noscript>
 			</div> <!-- noscript -->
 
-      <div id="content">
+      <div id="content" class="rounded shadow">
         <%= yield %>
       </div> <!-- content -->
       
