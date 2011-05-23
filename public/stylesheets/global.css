@@ -45,6 +45,13 @@ a {
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, 0.246094) -1px -1px 0px;
 }
+.logo_font {
+  font-family: "Lobster", Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  font-size: 2em;
+}
 .logo {
   font-family: inherit;
 }

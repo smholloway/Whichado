@@ -8,11 +8,14 @@
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
     <%= render 'shared/analytics' %>
+    <link href="http://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" type="text/css">  
 </head> 
 <body>
     <div id="page-wrap"> 
-        <div id="landing-content" class="transparent shadow rounded"> 
-            <h1>Whichado - <%= @city %></h1> 
+        <div id="landing-content" class="transparent shadow rounded">
+            <div style="font-size: 2em;">
+              <span class="logo_font">Whichado</span> - <%= @city %>
+            </div>
             <br />
             
             <%= yield %>
