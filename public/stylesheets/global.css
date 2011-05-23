@@ -15,7 +15,7 @@ a {
 }
 
 #content {
-  width: 960px;
+  width: 930px; /* 960 after padding though */
   margin: auto;
   padding: 15px;
   background: #fff;
@@ -233,6 +233,18 @@ a {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   border-radius: 20px;
+}
+.top-left-rounded-corner {
+	-webkit-border-top-left-radius: 20px;
+	-khtml-border-radius-topleft: 20px;	
+	-moz-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
+}
+.top-right-rounded-corner {
+	-webkit-border-top-right-radius: 20px;
+	-khtml-border-radius-topright: 20px;	
+	-moz-border-radius-topright: 20px;
+	border-top-right-radius: 20px;
 }
 
 #landing-content {
